@@ -10,7 +10,7 @@ class Termishare < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/qnkhuat/termishare/releases/download/v0.0.3/termishare_0.0.3_MacOS_x86_64.tar.gz"
-      sha256 "62c71c0c4516c466415f7a39a51e44ec127627a53a5c990191e57a67e5941d8f"
+      sha256 "da557986a884b978bafda153dc15c9100532b82b2eb92e27981e508fe9a13989"
 
       def install
         bin.install "termishare"
@@ -18,7 +18,7 @@ class Termishare < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/qnkhuat/termishare/releases/download/v0.0.3/termishare_0.0.3_MacOS_arm64.tar.gz"
-      sha256 "899fdfaec00486fb85d07a2123fbbb9c8bb3f6a78307a6007e37be04a8cb74a5"
+      sha256 "8c7c67a76724933a2fda430852cc9e9679660707267e998d58200f7b76d5c7a6"
 
       def install
         bin.install "termishare"
@@ -29,7 +29,7 @@ class Termishare < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/qnkhuat/termishare/releases/download/v0.0.3/termishare_0.0.3_Linux_arm64.tar.gz"
-      sha256 "f9d58f60ff9505cc7ae3e3f8f8a98782fe580cc10a8ef3f930b689795262ae1d"
+      sha256 "5180ed5e4f30cd8a3b276039703085e6f0ce0c2c13c5671ac5afb6272738d556"
 
       def install
         bin.install "termishare"
@@ -37,7 +37,7 @@ class Termishare < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/qnkhuat/termishare/releases/download/v0.0.3/termishare_0.0.3_Linux_x86_64.tar.gz"
-      sha256 "67fcf73f2e021f6d0898ece94902559b7dd1dbff40f931773d2f72ee63aa6c02"
+      sha256 "e6362c6d2f39e1083b3c46f0d51efe0552101af0a6b23c4f5c72ac9276109dd6"
 
       def install
         bin.install "termishare"
