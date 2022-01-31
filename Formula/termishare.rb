@@ -5,20 +5,20 @@
 class Termishare < Formula
   desc "Peer to peer terminal sharing"
   homepage "https://github.com/qnkhuat/termishare"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/qnkhuat/termishare/releases/download/v0.0.3/termishare_0.0.3_MacOS_x86_64.tar.gz"
-      sha256 "da557986a884b978bafda153dc15c9100532b82b2eb92e27981e508fe9a13989"
+      url "https://github.com/qnkhuat/termishare/releases/download/v0.0.4/termishare_0.0.4_MacOS_x86_64.tar.gz"
+      sha256 "b9ce679e668ca88b5219ceedf621f0ca688a7fa99f96b08dba6d3a3418b34b27"
 
       def install
         bin.install "termishare"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/qnkhuat/termishare/releases/download/v0.0.3/termishare_0.0.3_MacOS_arm64.tar.gz"
-      sha256 "8c7c67a76724933a2fda430852cc9e9679660707267e998d58200f7b76d5c7a6"
+      url "https://github.com/qnkhuat/termishare/releases/download/v0.0.4/termishare_0.0.4_MacOS_arm64.tar.gz"
+      sha256 "eca4330092194d358be9c39e88c83688d6100640981669310021e4259b9ecea0"
 
       def install
         bin.install "termishare"
@@ -28,16 +28,16 @@ class Termishare < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/qnkhuat/termishare/releases/download/v0.0.3/termishare_0.0.3_Linux_arm64.tar.gz"
-      sha256 "5180ed5e4f30cd8a3b276039703085e6f0ce0c2c13c5671ac5afb6272738d556"
+      url "https://github.com/qnkhuat/termishare/releases/download/v0.0.4/termishare_0.0.4_Linux_arm64.tar.gz"
+      sha256 "e01625ff6e8c19627782377948614e5adaea5deb84691a9a5f857bbf648a3e11"
 
       def install
         bin.install "termishare"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/qnkhuat/termishare/releases/download/v0.0.3/termishare_0.0.3_Linux_x86_64.tar.gz"
-      sha256 "e6362c6d2f39e1083b3c46f0d51efe0552101af0a6b23c4f5c72ac9276109dd6"
+      url "https://github.com/qnkhuat/termishare/releases/download/v0.0.4/termishare_0.0.4_Linux_x86_64.tar.gz"
+      sha256 "d412584d5f82c50bd0b20fe86a61435bba30fad54b7768efa780bd22a755c087"
 
       def install
         bin.install "termishare"
